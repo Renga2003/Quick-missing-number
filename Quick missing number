@@ -1,0 +1,15 @@
+n=list(map(int,input().split()))
+max=0
+a=[]
+flag=0
+for val in n:
+    if(max<val):
+        max=val
+for i in range(0,max+1):
+      a.append(i)
+for j in a:
+    if j not in n:
+        print(j)
+        flag=1
+if(flag==0):
+    print(max+1)
